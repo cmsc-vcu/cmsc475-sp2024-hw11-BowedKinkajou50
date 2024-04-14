@@ -1,6 +1,6 @@
 ---
 title: Homework 11 - mobile app interactivity
-author: <your name goes here>
+author: Even Pham
 date: last-modified
 lightbox: true
 format:
@@ -10,70 +10,179 @@ format:
     theme: cosmo
 ---
 
-* [LINK to GITHUB](https://github.com/cmsc-vcu/cmsc475-sp2024-hw11-template)
+* [LINK to GITHUB](https://github.com/cmsc-vcu/cmsc475-sp2024-hw10-BowedKinkajou50)
 
-* [LINK to FIGMA](https://github.com/cmsc-vcu/cmsc475-sp2024-hw11-template)
+* [LINK to FIGMA](https://www.figma.com/file/TULFrDwTbNoVbWLqzHglKM/Untitled?type=design&node-id=0-1&mode=design&t=MJfnTKIsKQrha9Yz-0)
 
-* [LINK to Snack Editor](https://github.com/cmsc-vcu/cmsc475-sp2024-hw11-template)
+* [LINK to Snack Editor](https://snack.expo.dev/@bowedkinkajou50/first-screen-475?platform=ios)
 
-# Overview of (Name of application)
+* [Link to Second Snack Editor](https://snack.expo.dev/@bowedkinkajou50/second-snack)
 
-[provide a brief description of your app.  You can use info from last week's pitch.]
+# Overview
+
+- AnimalFact prioritizes user satisfaction by ensuring a seamless and frustration-free experience. The app's intuitive design eliminates the need for complicated instructions, allowing users to navigate effortlessly. With a format similar to Instagram, users can easily access different screens and enjoy scrolling through a wide array of adorable animal content.
 
 # Key features
 
-[expand on the key features that you described in the previous assignment.]
+- Educational Content: AnimalFact offers users the opportunity to learn more about different animals as they scroll through the app. Each image is accompanied by informative text, allowing users to gain knowledge about their favorite pets or potential new companions.
+- User-Friendly Interface: The app features an intuitive and easy-to-navigate interface, reminiscent of popular social media platforms like Instagram. Users can access additional screens through a hotbar and seamlessly scroll through images and videos.
+- Engaging Experience: AnimalFact aims to provide an enjoyable experience for users, allowing them to explore a variety of cute animal pictures while simultaneously learning interesting facts about them.
 
-# Individual Screen details
+# Storyboard of AnimalFact
 
-The following section documents the individual screens of the application, the elements on each screen,
-and how the user is expected to interact with the screen.
 
-**NOTE: the following sections should be repeated for each of your screens, that is 2nd level screen name
-followed by a wireframe example and an as-built screen shot.
+```{=html}
+<center>
+<iframe
+src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FTULFrDwTbNoVbWLqzHglKM%2FStoryboard%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DMJfnTKIsKQrha9Yz-1"
+allowfullscreen
+width="800"
+height="450"
+data-external="1"
 
-## Main screen
+></iframe>
+</center>
+```
 
-The main screen serves as the central node for this application.  All other screens return to this screen.
+### wireframe design
+
+```{=html}
+<center>
+<iframe
+src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTULFrDwTbNoVbWLqzHglKM%2FUntitled%3Ftype%3Ddesign%26node-id%3D1-2%26t%3D1EbI6I6J1BGESf4r-1%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26mode%3Ddesign"
+allowfullscreen
+width="800"
+height="450"
+data-external="1"
+
+></iframe>
+</center>
+```
+
+# Individual screen details
+
+## Component 1 - starting page
 
 ### Interactivity on this screen
+![](assets/InteractivityStarting.png)
 
+Starting page with dark mode, this can lead you into the 3 pages with animal facts.
 
+### wireframe design
+![](assets/StartingPage.png)
 
-### Wireframe design
+This is where you end up when you open the app, access to all animal content is in this page
 
-Below is my wireframe image.  (include a description of features and elements.)
-
-![](./assets/sample-image.png){height=400 fig-align="center"}
+-Make sure all animal api's are working on this page and that scrolling down gives a random animal picture/video to show up
+-Focus on the screen itself, the border area will not be in the actual (most likely)
 
 ### As-built screenshot
 
-Here is a screen shot of the image I created running on my phone.
+This is the new Opening Screen.
 
-![](./assets/sample-image.png){height=400 fig-align="center"}
+![](assets/HomeSreen.png)
 
-# Snack code for this screen
 
-(this is a level 1 section, provide a snack that contains your currently working app which
-includes your screens and a navigation system.
-)
+## Component 2 - Dogs
+
+### Interactivity on this screen
+
+![](assets/DogInter.png)
+
+New fact button added where it calls a Dog API.
+
+### wireframe design
+
+![](assets/Dogs.png)
+
+When you click on this tab on the hot bar, access to **only** dog photos/videos will be shown
+
+- only dog based apis
+- APIS: https://place.dog/, https://kinduff.github.io/dog-api/, https://dukengn.github.io/Dog-facts-API/, https://shibe.online/
+
+### As-built screenshot
+
+![](assets/DogScreen.png)
+
+## Component 3 - Cats
+
+### Interactivity on this screen
+
+![](assets/CatInter.png)
+
+
+New fact button added where it calls a Cat API.
+
+### wireframe design
+![](assets/Cats.png)
+
+When you click on this tab on the hot bar, access to **only** cat photos/videos will be shown
+
+- only cat based apis
+- APIS: https://cataas.com/, https://cat-fact.herokuapp.com/#/, https://catfact.ninja/#/Facts/getFacts
+
+### As-built screenshot
+
+![](assets/CatScreen.png)
+
+## Component 4 - Birds
+
+### Interactivity on this screen
+
+![](assets/interBird.png)
+
+New fact button added where it calls a Bird API.
+
+### wireframe design
+
+![](assets/Birds.png)
+
+When you click on this tab on the hot bar, access to **only** bird photos/videos will be shown
+
+- only bird based apis
+- APIS: https://random-d.uk/api, https://github.com/bog-walk/random-bird, https://some-random-api.ml/endpoints/facts/bird
+
+### As-built screenshot
+
+![](assets/BirdScreen.png)
+
+## Component 5 - Settings page
+
+### Interactivity on this screen
+
+![](assets/SettingsInter.png)
+
+Functioning DarkMode changing the rest of the screens.
+
+### wireframe design
+
+![](assets/Settings.png)
+
+When you click on this tab on the hot bar, you will gain access to the settings where you can turn on dark/light mode
+
+-Simple change to color scheme for all screens once dark/light mode is clicked
+
+### As-built screenshot
+
+![](assets/SettingsScreen.png)
+
+## Snack code for this screen
+
+and here is the URL for the Snack:
 
 ```{=html}
-<div 
-data-snack-id="@jleonard99/cmsc475-sp2024-homework-11-template"
-data-snack-platform="web"
-data-snack-preview="true" 
-data-snack-theme="light" 
-style="overflow:hidden;background:#fbfcfd;border:3px solid var(--color-border);border-radius:4px;height:500px;width:100%">
-</div>
-<script async src="https://snack.expo.dev/embed.js"></script>
+<div data-snack-id="@bowedkinkajou50/first-screen-475" data-snack-platform="ios" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#0C0D0E;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
+<script async src="https://snack.expo.dev/embed.js"></script> 
 ```
+
+## Snack code for the Second screen
+
+<div data-snack-id="@bowedkinkajou50/second-snack" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#0C0D0E;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
+<script async src="https://snack.expo.dev/embed.js"></script>
 
 # Reflection
 
-* Discuss your experience coding hooks in this assignment.  Which hooks were hardest?  Which easiest?  What helped you figure them out?
-* How much time did you spend on this specific assignment (homework 11 - interactivity)?
-* What was the easiest part of this specific assignment (hw11)?
-* What is the hardest part of this specific assignment (hw11)?
-* Discuss your overall experience using Snack and developing this mobile app.
-
+* The hooks that were the easiest was surprisingly the api calls. The hardest, Id say the dark mode since I couldn't figure out 
+* It took a couple of hours but have some hours in my sleep to think about how to approach it.
+* Easiest part was having the transitions between componenets.
+* To be frank, I enjoyed it, Developing an app made for IOS made it harder since there were problems like having photos show up and having formating show up well.
