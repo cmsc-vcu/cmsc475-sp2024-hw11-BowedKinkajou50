@@ -171,14 +171,9 @@ When you click on this tab on the hot bar, you will gain access to the settings 
 and here is the URL for the Snack:
 
 ```{=html}
-<div data-snack-id="@bowedkinkajou50/first-screen-475" data-snack-platform="ios" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#0C0D0E;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
-<script async src="https://snack.expo.dev/embed.js"></script> 
-```
-
-## Snack code for the Second screen
-
 <div data-snack-id="@bowedkinkajou50/second-snack" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#0C0D0E;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
 <script async src="https://snack.expo.dev/embed.js"></script>
+```
 
 # Reflection
 
